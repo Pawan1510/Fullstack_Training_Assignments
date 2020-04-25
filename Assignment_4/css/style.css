@@ -1,0 +1,45 @@
+#top-bar-container {
+    width: 1450px;
+    height: 55px;
+    background-color: rgb(57, 55, 55)
+}
+#top-bar {
+    margin-top: 5px;
+}
+.btns {
+    float: left;  
+    border-radius: 0%;
+}
+
+#content-box {
+    height: 600px;
+    margin-top: 5px;
+    border: 1px solid grey;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 550;
+    margin-bottom: 0px;
+}
+
+#next-p {
+    margin-top: 30px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+#bottom-bar {
+    background-color: rgb(57, 55, 55);
+}
+.btns1 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-radius: 0%;
+}

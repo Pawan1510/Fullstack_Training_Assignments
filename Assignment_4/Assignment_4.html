@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_4</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container" id="top-bar-container">
+        <div class="row">
+            <div class="col-md-2" id="top-bar">
+                <button class="btn btn-lg btns">HTML</button>
+                <button class="btn btn-lg btns">CSS</button>
+                <button class="btn btn-lg btns">JS</button>
+            </div>
+
+            <div class="col-md-8" id="top-bar">
+                <center><button class="btn btn-lg" style="border-radius: 0%; background-color: aqua;">Result</button></center>
+            </div>
+
+            <div class="col-md-2" style="text-align: right; color: #fff;">
+                <p style="line-height: 70%; margin-top: 10px; font-weight: 60;">Edit on</p>
+                <img src="./img/article_01969_.png" style="height: 20px;">
+            </div>
+
+
+            <!-- Content Area -->
+            <div class="col-md-12" id="content-box">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="">
+                            <p>Who invented JavaScript?</p>
+                            <input type="radio" name="a" value="a">
+                            <label for="a">a : Douglas Crockford</label><br>
+                            <input type="radio" name="b" value="b">
+                            <label for="b">b : Sheryl Sandberg</label><br>
+                            <input type="radio" name="c" value="c">
+                            <label for="c">c : Brendan Eich</label>
+
+                            <p id="next-p">Which one of these is a JavaScript package manager?</p>
+                            <input type="radio" name="a" value="a">
+                            <label for="a">a : Node.js</label><br>
+                            <input type="radio" name="b" value="b">
+                            <label for="b">b : TypeScript</label><br>
+                            <input type="radio" name="c" value="c">
+                            <label for="c">c : npm</label>
+
+                            <p id="next-p">Which tool can you use to ensure code quality?</p>
+                            <input type="radio" name="a" value="a">
+                            <label for="a">a : Angular</label><br>
+                            <input type="radio" name="b" value="b">
+                            <label for="b">b : jQuery</label><br>
+                            <input type="radio" name="c" value="c">
+                            <label for="c">c : RequireJS</label><br>
+                            <input type="radio" name="d" value="d">
+                            <label for="d">d : ESLint</label><br><br>
+
+                            <input type="submit"
+                                   class="btn btn-lg btns1"
+                                   value="Submit Quiz"
+                                   style="color: #fff; background-color: #127cd0;"
+                                   >
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="bottom-bar">
+            <!-- Bottom Bar -->
+            <div class="col-md-2">
+                <button class="btn btn-lg btns1" style="border-radius: 0%;">Resources</button>
+            </div>
+
+            <div class="col-md-8">
+                <center>
+                    <button class="btn btn-lg btns1" style="background-color: aqua;">1x</button>
+                    <button class="btn btn-lg btns1">0.5x</button>
+                    <button class="btn btn-lg btns1">0.25x</button>
+                </center>
+            </div>
+
+            <div class="col-md-2" style="text-align: right;">
+                <button class="btn btn-lg btns1">Rerun</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
