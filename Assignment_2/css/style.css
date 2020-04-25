@@ -1,0 +1,31 @@
+body {
+    background-color: #000;
+}
+.game-box {
+    height: 350px;
+    width: 350px;
+    margin: 30px auto 50px auto;
+}
+.btns {
+    border-radius: 0;
+    border-radius: 0;
+    padding: 40px;
+    background-color: transparent;
+    margin: 0px;
+    font-size: 50px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    background-color: whitesmoke;
+    border: 10px solid black
+}
+h3 {
+    font-size: 40px;
+    color: #fff;
+}
+.colms {
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid #000;
+}

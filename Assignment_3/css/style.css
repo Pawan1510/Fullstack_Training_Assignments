@@ -1,0 +1,18 @@
+#top-bar {
+    height: 45px;
+    padding-top: 5px;
+    background-color: #87CEEB;
+}
+#content-area {
+    height: 685px;
+}
+#left-side-bar {
+    height: 685px;
+    background-color: grey;
+    float: left;
+}
+
+#right-side-bar {
+    height: 685px;
+    background-color: #fff;
+}

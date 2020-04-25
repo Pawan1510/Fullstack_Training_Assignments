@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_3</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-fluid" id="top-bar">
+        <div class="row">
+            <div class="col-md-2">
+                <center><p style="margin: 7px 3px 4px 5px;">Duomly Dashboard</p></center>
+            </div>
+            <div class="col-md-8" style="margin: 0px; padding: 0px;">
+                <input type="text" class="form-control" placeholder="Search..." style="border-radius: 0;">
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-primary form-control" style="border-radius: 0;">LOGOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="content-area">
+        <div class="row">
+            <div class="col-md-2" id="left-side-bar">
+
+                <table style="border-style: none; margin-top: 20px; padding: 0px; font-size: 16px;">
+                    <tr>
+                        <td><p><span class="glyphicon glyphicon-chevron-right"></span>Candidates</p></td>
+                    </tr>
+                    <tr>
+                        <td><p><span class="glyphicon glyphicon-chevron-right"></span>Jobs</p></td>
+                    </tr>
+                    <tr>
+                        <td><p><span class="glyphicon glyphicon-chevron-right"></span>Orders</p></td>
+                    </tr>
+                    <tr>
+                        <td><p><span class="glyphicon glyphicon-chevron-right"></span>Reports</p></td>
+                    </tr>
+                </table>
+
+
+            </div>
+            <div class="col-md-10" id="right-side-bar">
+
+                <table style="color:white;font-size:12px;width:100%;height:150px;background-color:#3C3C3C;margin-top:8px;padding:0px;margin-top:10px;margin-bottom:3px;border:1px solid black;">
+                    <caption style="color:black;font-size:25px;margin-bottom:5px;padding:0px;width:100%;">Candidates: </caption>
+        
+                    <tr style="border:1px white;border-style:none none solid none;">
+                        <td id="hash">#</td>
+                        <td>First</td>
+                        <td>Last</td>
+                        <td>JOB</td>
+                    </tr>
+        
+                    <tr style="border:1px white;border-style:none none solid none;">
+                        <td id="hash">1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>Doctor</td>
+                    </tr>
+        
+                    <tr style="border:1px white;border-style:none none solid none;">
+                        <td id="hash">2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Builder</td>
+                    </tr>
+        
+                    <tr style="border:1px white;border-style:none none solid none;">
+                        <td id="hash">3</td>
+                        <td>Martin</td>
+                        <td>Joe</td>
+                        <td>Architect</td>
+                    </tr>
+        
+                    <tr style="border:1px white;border-style:none none solid none;">
+                        <td id="hash">4</td>
+                        <td>Kate</td>
+                        <td>Mayers</td>
+                        <td>Nurse</td>
+                    </tr>
+        
+                    <tr style="border:1px white;border-style:none none solid none;">
+                        <td id="hash">5</td>
+                        <td>Monica</td>
+                        <td>Smith</td>
+                        <td>Assistent</td>
+                    </tr>
+                </table>
+
+                <p style="color:black; font-size: 30px; margin:0px;padding:0px;width:100%;height:40px;background-color:white;padding-top:8px;"><bold>Invoice:</bold></p>	
+		
+                <div class="container-fluid" style="background-color:white;margin-top:10px;height:150px;">
+                    <div class="row" style="margin:0px;padding:0px;">
+                        <div class="col-xs-6" style="margin:0px;height:150px;padding:0px;">
+                            <table style="border:1px solid black;margin:3px;height:130px;padding-left:3px;">
+                                <th style="padding-left:5px;">Invoice #98761</th>
+                                <tr>
+                                    <td style="padding-left:5px;color:black;font-size:12px;">A full-size keyboard designed for iPad Pro brings individual hard keycaps</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left:5px;"><button type="button" class="btn btn-primary">Print</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-xs-6" style="margin:0px;height:150px;padding:0px;">
+                            <table style="border:1px solid black;margin:3px;height:130px;padding-left:3px;">
+                                <th style="padding-left:5px;">Invoice #98761</th>
+                                <tr>
+                                    <td style="padding-left:5px;color:black;font-size:12px;">A full-size keyboard designed for iPad Pro brings individual hard keycaps</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left:5px;"><button type="button" class="btn btn-primary">Print</button></td>
+                                </tr>
+                            </table>
+                        </div>	
+                    </div>
+                </div>
+                
+                <div class="container-fluid" style="background-color:white;margin-top:10px;height:25%;">
+                    <div class="row" style="margin:0px;padding:0px;">
+                        <div class="col-xs-6" style="margin:0px;height:150px;padding:0px;">
+                            <table style="border:1px solid black;margin:3px;height:130px;padding-left:3px;">
+                                <th style="padding-left:5px;">Invoice #98761</th>
+                                <tr>
+                                    <td style="padding-left:5px;color:black;font-size:12px;">A full-size keyboard designed for iPad Pro brings individual hard keycaps</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left:5px;"><button type="button" class="btn btn-primary">Print</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-xs-6" style="margin:0px;height:150px;padding:0px;">
+                            <table style="border:1px solid black;margin:3px;height:130px;padding-left:3px;">
+                                <th style="padding-left:5px;">Invoice #98761</th>
+                                <tr>
+                                    <td style="padding-left:5px;color:black;font-size:12px;">A full-size keyboard designed for iPad Pro brings individual hard keycaps</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left:5px;"><button type="button" class="btn btn-primary">Print</button></td>
+                                </tr>
+                            </table>
+                        </div>	
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

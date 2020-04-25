@@ -1,0 +1,21 @@
+#search-field {
+    width: 300px;
+}
+#main-box .outer-box {
+    height: 100%;
+    display: table;
+}
+#main-box .inner-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+.string-font {
+    margin-right: 20px;
+}
+
+#img-section {
+    width: 355px;
+}
+#content-section {
+    width: 60%;
+}
