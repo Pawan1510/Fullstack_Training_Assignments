@@ -51,16 +51,19 @@ function quizSubmit() {
 
     var count = 0;
     for(let i = 0; i < tellyAns.length; i++){
-        if(ans[i] === null){
+
+        if(ans[i] == "null") {
             count += 0;
         }
-        else if(ans[i] === tellyAns[i]){
+        else if(ans[i] == tellyAns[i]){
             count += 4;
         }
-        else if(ans[i] !== null && ans[i] !== tellyAns[i]){
+        else{
             count -= 0.25;
         }
+        
     }
+    console.log(ans);
     return count;
 }
 
