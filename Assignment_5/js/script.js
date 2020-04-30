@@ -10,7 +10,7 @@ function getSubmit() {
     var month           = document.getElementById("month").value;
     var year            = document.getElementById("year").value;
     var dob             = day + " / " + month + " / " + year;
-    var ele = document.getElementsByTagName('input');
+    var ele = document.getElementsByName("gender");
     var gender = "";
     for(i =0; i < ele.length; i++){
         if(ele[i].type="radio") {
