@@ -180,19 +180,19 @@
                     <td>Date of Birth</td>
                     <td><b>:</b></td>
                     <td colspan="3">
-                    <select name="DOB_Day">
+                    <select name="DOB_Day" id="day">
                         <option value="">Day</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
                     </select>
-                    <select name="DOB_Month">
+                    <select name="DOB_Month" id="month">
                         <option value="">Month</option>
-                        <option value="01">JAN</option>
-                        <option value="02">FEB</option>
-                        <option value="03">MAR</option>
+                        <option value="Jan">JAN</option>
+                        <option value="Feb">FEB</option>
+                        <option value="Mar">MAR</option>
                     </select>
-                    <select name="DOB_Year"><option value="" label="Year" selected="">Year</option>
+                    <select name="DOB_Year" id="year"><option value="" label="Year" selected="">Year</option>
                         <option value="2020" label="2020">2020</option>
                         <option value="2019" label="2019">2019</option>               
                     </select>
@@ -203,8 +203,9 @@
                     <td>Gender</td>
                     <td><b>:</b></td>
                     <td colspan="3">
-                        <input type="radio" name="gender" value="m" checked="checked">Male &nbsp;&nbsp;
-                        <input type="radio" name="gender" value="f">Female 
+                            <input type="radio" name="gender" value="Male" >Male &nbsp;&nbsp;
+                            <input type="radio" name="gender" value="Female">Female
+                         
                     </td>
                 </tr>
                 <tr><td height="10"></td></tr>
@@ -213,8 +214,9 @@
                 <td><b>:</b></td>
                 <td colspan="3">
                     <select style="width: 183px;" name="country" id="country">
-                                <option value="99" label="India">India</option>
-                                <option value="3" label="American Samoa">American Samoa</option>
+                        <option value="" label="Select">Select</option>
+                        <option value="India" label="India">India</option>
+                        <option value="America" label="American Samoa">American Samoa</option>
                     </select>
                 </td>
             </tr>
@@ -227,31 +229,24 @@
                                 <tr>
                                     <td width="179" align="right">City&nbsp;&nbsp;</td>
                                     <td width="14"><b>:</b></td>
-                                    <td colspan="3"><select name="city" style="width:183px;">
+                                    <td colspan="3"><select name="city" id="city" style="width:183px;">
                                         
                                             <option label="Select" value="" selected="selected">Select</option>
-                                            <option label="Agartala" value="Agartala">Agartala</option>
+                                            <option label="Ambala" value="Ambala">Ambala</option>
                                             <option label="Agra" value="Agra">Agra</option>
                                             <option label="Ahmedabad" value="Ahmedabad">Ahmedabad</option>
 
                                         </select>
                                     </td>
                                 </tr>
-                                <tr><td height="8"></td></tr>
-                                <tr>
-                                    <td colspan="2"></td><td colspan="3">
-                                        <div style="visibility:hidden; display:none;">
-                                            <input type="text" name="othercity" value="" style="width:180"><br><br>
-                                        </div>
-                                    </td>
-                                </tr>
+
                             </tbody>
                         </table>
                     </div>
                 </td>
             </tr>
 
-            <tr><td height="5"></td></tr>
+            <tr><td height="10"></td></tr>
 
             <tr>
                 <td colspan="2"></td>
@@ -267,7 +262,7 @@
             <tr>
                 <td valign="top">Enter the text shown above</td>
                 <td valign="top"><b>:</b></td>
-                <td><input type="text" name="captchaText" style="width:183px;" value=""></td>
+                <td><input type="text" id="captcha" name="captchaText" style="width:183px;"></td>
                 <td></td>
                 <td></td>
             </tr>

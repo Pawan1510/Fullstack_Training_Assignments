@@ -21,7 +21,7 @@
             </div>
 
             <div class="col-md-8" id="top-bar">
-                <center><button class="btn btn-lg" style="border-radius: 0%; background-color: aqua;">Result</button></center>
+                <center><button type="button" id="resultBtn" class="btn btn-lg" onclick="totalScore(); this.disabled=true" style="border-radius: 0%; background-color: aqua;">Result</button></center>
             </div>
 
             <div class="col-md-2" style="text-align: right; color: #fff;">
@@ -33,43 +33,70 @@
             <!-- Content Area -->
             <div class="col-md-12" id="content-box">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="padding-left: 2.5%; padding-top: 1%;">
+
                         <form action="">
+
                             <p>Who invented JavaScript?</p>
-                            <input type="radio" name="a" value="a">
-                            <label for="a">a : Douglas Crockford</label><br>
-                            <input type="radio" name="b" value="b">
-                            <label for="b">b : Sheryl Sandberg</label><br>
-                            <input type="radio" name="c" value="c">
-                            <label for="c">c : Brendan Eich</label>
-
-                            <p id="next-p">Which one of these is a JavaScript package manager?</p>
-                            <input type="radio" name="a" value="a">
-                            <label for="a">a : Node.js</label><br>
-                            <input type="radio" name="b" value="b">
-                            <label for="b">b : TypeScript</label><br>
-                            <input type="radio" name="c" value="c">
-                            <label for="c">c : npm</label>
-
-                            <p id="next-p">Which tool can you use to ensure code quality?</p>
-                            <input type="radio" name="a" value="a">
-                            <label for="a">a : Angular</label><br>
-                            <input type="radio" name="b" value="b">
-                            <label for="b">b : jQuery</label><br>
-                            <input type="radio" name="c" value="c">
-                            <label for="c">c : RequireJS</label><br>
-                            <input type="radio" name="d" value="d">
-                            <label for="d">d : ESLint</label><br><br>
-
-                            <input type="submit"
+                            <input type="radio" id="inventer1" name="question1" value="Douglas Crockford">
+                            <label for="inventer1">a : Douglas Crockford</label><br>
+                            <input type="radio" id="inventer2" name="question1" value="Sheryl Sandberg">
+                            <label for="inventer2">b : Sheryl Sandberg</label><br>
+                            <input type="radio" id="inventer3" name="question1" value="Brendan Eich">
+                            <label for="inventer3">c : Brendan Eich</label>
+                          
+                            <br>  
+                          
+                            <p>Which one of these is a JavaScript package manager?</p>
+                            <input type="radio" id="packageManager1" name="question2" value="Node.js">
+                            <label for="packageManager1">a : Node.js</label><br>
+                            <input type="radio" id="packageManager2" name="question2" value="TypeScript">
+                            <label for="packageManager2">b : TypeScript</label><br>  
+                            <input type="radio" id="packageManager3" name="question2" value="npm">
+                            <label for="packageManager3">c : npm</label>
+                            
+                            <br>
+                            
+                            <p>Which tool can you use to ensure code quality?</p>
+                            <input type="radio" id="tool1" name="question3" value="Angular">
+                            <label for="tool1">a : Angular</label><br>
+                            <input type="radio" id="tool2" name="question3" value="jQuery">
+                            <label for="tool2">b : jQuery</label><br>  
+                            <input type="radio" id="tool3" name="question3" value="RequireJS">
+                            <label for="tool3">c : RequireJS</label><br>
+                            <input type="radio" id="tool4" name="question3" value="ESLint">
+                            <label for="tool4">d : ESLint</label><br>
+                            
+                            <br>
+                            
+                            <!-- <input type="submit"
                                    class="btn btn-lg btns1"
                                    value="Submit Quiz"
                                    style="color: #fff; background-color: #127cd0;"
-                                   >
-                        </form>
+                                   onclick="quizSubmit()"
+                                   > -->
+
+                          </form>
+                          <button type="submit"
+                                    id="sbmitBtn"
+                                   class="btn btn-lg btns1"
+                                   value="Submit Quiz"
+                                   style="color: #fff; background-color: #127cd0;"
+                                   onclick="quizSubmit(); alert('Test successfully submitted!!! check your score'); this.disabled=true"
+                                   
+                                   >Submit Quiz</button>
+                                   <div style="margin-top: 100px;">
+                                       
+                                        <center><strong style="color: red;">For each answer you'll get 4 marks each, but there is negative marking of 0.25 marks on each negative answer.</strong></center>
+                                        <center><strong style="color: red;">No mark will be deducted if you leave the question.</strong></center>
+                                       
+                                   </div>
+                                   
                     </div>
+                    
                 </div>
             </div>
+            
         </div>
         <div class="row" id="bottom-bar">
             <!-- Bottom Bar -->
@@ -90,5 +117,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
